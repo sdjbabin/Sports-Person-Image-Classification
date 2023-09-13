@@ -2,6 +2,8 @@
 
 GitHub repository for a machine learning-based sports personality image classification system. This project covers data collection, preprocessing, model training, and performance evaluation. Open-source under the MIT License.
 
+LINK TO DOWNLOAD THE IMAGES DATASET: https://drive.google.com/drive/folders/1WM6r3QC_A2wb0wE8EBWEyAZXAf5UEDii?usp=drive_link
+
 ## Introduction
 
 Welcome to the Sports Person Image Classification project repository! This project focuses on utilizing machine learning techniques to recognize and classify images of sports personalities. Whether you're a sports enthusiast, developer, or researcher, this repository offers tools and resources for accurate image recognition in the world of sports.
