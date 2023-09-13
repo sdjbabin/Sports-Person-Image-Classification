@@ -1,8 +1,8 @@
-# Sports-Person-Image-Classification
 
-GitHub repository for a machine learning-based sports personality image classification system. This project covers data collection, preprocessing, model training, and performance evaluation. Open-source under the MIT License.
 
-# Sports Person Image Classification
+#### GitHub repository for a machine learning-based sports personality image classification system. This project covers data collection, preprocessing, model training, and performance evaluation. Open-source under the MIT License.
+
+## Sports Person Image Classification
 
 Welcome to the Sports Person Image Classification project repository! This project focuses on utilizing machine learning techniques to recognize and classify images of sports personalities. Whether you're a sports enthusiast, developer, or researcher, this repository offers tools and resources for accurate image recognition in the world of sports.
 
@@ -32,45 +32,33 @@ Recognizing sports icons in images is a valuable task in today's digital world. 
 
 ## Getting Started
 
-
-1. Clone this repository to your local machine:
+Clone this repository to your local machine:
 
    ```bash
    git clone https://github.com/sdjbabin/Sports-Person-Image-Classification.git
-Navigate to the project directory:
 
-bash
-Copy code
-cd Sports-Person-Image-Classification
-Install the required dependencies:
+Prerequisites: Ensure you have the necessary libraries installed. You can install them using pip.
 
-bash
-Copy code
-pip install -r requirements.txt
-Explore the project components and documentation.
+Overview: The code aims to detect and recognize faces of celebrities in images. It follows these key steps:
 
-Model Training
-We chose a Support Vector Machine (SVM) as the classification model for this project due to its simplicity and effectiveness. The SVM model achieved an accuracy of approximately 82% on our dataset.
+Importing Libraries and Loading an Image
+Face Detection using Haar Cascade
+Creating a Cropped Image
+Feature Engineering with Wavelet Transform
+Model Training (Support Vector Machine, SVM)
+Model Selection using GridSearchCV
+Saving the Trained Model and Class Dictionary
+Creating a GUI for Image Upload and Testing
+Face Detection using Haar Cascade: The code uses Haar Cascade classifiers to detect faces and eyes in the image. It makes use of OpenCV for this purpose.
 
-While deep learning techniques can yield even higher accuracy, this project emphasizes how simple machine learning can also be used effectively for image classification, making it accessible for those who prefer a less complex solution.
+Feature Engineering with Wavelet Transform: A wavelet transform is applied to the cropped image to enhance its features, making it easier to distinguish facial features like eyes, nose, and lips.
 
-Usage
-Collect sports personality images or use the provided dataset.
-Preprocess the data to prepare it for model training.
-Train the machine learning models using the provided scripts.
-Evaluate model performance using metrics and guidelines.
-Test unknown images using the provided Python Tkinter GUI for image recognition.
-Dataset
-The dataset used in this project consists of images of various sports personalities. You can find more details about the dataset in the dataset/README.md file.
+Model Training: The dataset is prepared for training the machine learning model. Both raw and wavelet-transformed images are used as features. The chosen model is a Support Vector Machine (SVM).
 
-Evaluation
-Evaluate the model's accuracy and performance using the metrics and guidelines explained in the evaluation/README.md file.
+Model Selection using GridSearchCV: Different machine learning models and hyperparameters are explored using GridSearchCV to find the best-performing model.
 
-Testing with GUI
-Test unknown images with ease using our Python Tkinter GUI for image recognition.
+Saving the Model: The trained model and a class dictionary that maps class labels to celebrity names are saved for later use.
 
-Contributing
-We welcome contributions from the community! If you'd like to contribute to this project, please check out our Contribution Guidelines for more details.
+Creating a GUI for Image Upload: Tkinter is used to create a graphical user interface (GUI) that allows users to upload an image for celebrity recognition.
 
-License
-This project is open-source and available under the MIT License. See the LICENSE file for more information.
+Image Preprocessing and Prediction: When a user uploads an image, it undergoes preprocessing, face detection, feature engineering, and is then used for prediction. The recognized celebrity's name is displayed as the output.
